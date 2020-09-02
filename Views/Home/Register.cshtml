@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+<br />
+<form action="/Home/Submit">
+    First name: <input type="text" name="firstname" required/><br />
+    Last name: <input type="text" name="lastname" required/><br />
+    Email: <input type="text" name="emailaddress" required/><br />
+    Password (min 8 chars): <input type="password" pattern="[0-9a-zA-Z]{8,20}" title="Enter an ID consisting of 8-20 letters and digits" name="password" required/><br />
+    <input type="checkbox" name="Agree" required/>Do you agree to give us your soul?<br />
+    <input type="submit" value="Submit">
+</form>
