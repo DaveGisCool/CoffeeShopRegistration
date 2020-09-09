@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Shop";
+}
+
+<h2>Please make your selections</h2>
+
+<form action="/Home/Confirm">
+    <table>
+        <tr>
+            <td><label for="drinkchoices">Drink:</label></td>
+            <td>
+                <select name="drinkselection" id="drinks">
+                    <option value="default"> </option>
+                    <option value="cappucino">Cappucino</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="decaf">Decaffinated Coffee</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="hotchocolate">Hot Chocolate</option>
+                    <option value="latte">Latte</option>
+                    <option value="mochaccino">Mochaccino</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="drinksize">Size:</label></td>
+            <td>
+                <select name="sizeselection" id="cups">
+                    <option value="default"> </option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr><td><br /></td></tr>
+        <tr><td>Special Instructions:</td><td><input type="text" name="specialInstructions" /></td></tr>
+        <tr><td><br /></td></tr>
+    </table>
+
+    <input type="radio" id="transport" name="pickup" value="choosepickup">
+    <label for="male">Pickup</label><br>
+    <input type="radio" id="transport" name="pickup" value="choosedeliver">
+    <label for="female">Deliver</label><br>
+
+    <br />
+    <table>
+        <tr><td>For Delivery enter address:</td><td><input type="text" name="homeaddress" /></td></tr>
+    </table>
+    <br />
+    <label for="drinkready">Select a time:</label>
+    <input type="time" id="timeselection" name="chosentime">
+    <br />
+    <input type="submit" value="Confirm">
+</form>
