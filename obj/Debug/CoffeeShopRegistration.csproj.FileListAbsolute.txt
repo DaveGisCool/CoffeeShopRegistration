@@ -76,4 +76,3 @@ C:\devbuild4\CoffeeShopRegistration\CoffeeShopRegistration\obj\Debug\CoffeeShopR
 C:\devbuild4\CoffeeShopRegistration\CoffeeShopRegistration\obj\Debug\CoffeeShopRegistration.csproj.CopyComplete
 C:\devbuild4\CoffeeShopRegistration\CoffeeShopRegistration\obj\Debug\CoffeeShopRegistration.dll
 C:\devbuild4\CoffeeShopRegistration\CoffeeShopRegistration\obj\Debug\CoffeeShopRegistration.pdb
-C:\devbuild4\CoffeeShopRegistration\CoffeeShopRegistration\obj\Debug\CoffeeShopRegistration.csprojAssemblyReference.cache

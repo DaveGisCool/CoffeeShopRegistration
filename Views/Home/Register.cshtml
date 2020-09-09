@@ -6,10 +6,28 @@
 <h2>Register</h2>
 <br />
 <form action="/Home/Submit">
-    First name: <input type="text" name="firstname" required/><br />
-    Last name: <input type="text" name="lastname" required/><br />
-    Email: <input type="text" name="emailaddress" required/><br />
-    Password (min 8 chars): <input type="password" pattern="[0-9a-zA-Z]{8,20}" title="Enter an ID consisting of 8-20 letters and digits" name="password" required/><br />
-    <input type="checkbox" name="Agree" required/>Do you agree to give us your soul?<br />
+    <table>
+        <tr><td>First name: </td><td><input type="text" name="firstname" placeholder="First Name" required /></td></tr>
+        <tr><td>Last name:</td><td><input type="text" name="lastname" placeholder="Last Name" required /></td></tr>
+        <tr><td>Email:</td><td><input type="email" name="emailaddress" placeholder="email@email.com" required /></td></tr>
+        <tr><td>Phone Number (XXX-XXX-XXXX):</td><td><input type="tel" id="phonenumber" name="phonenumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /></td></tr>
+        <tr><td>Date of Birth:</td><td><input type="date" name="birthdate" required /></td></tr>
+        <tr><td><b>@ViewBag.UnregisterableZipCode</b></td></tr>
+        <tr><td>Zip Code:</td><td><input type="text" name="zipcode" placeholder="12345" required /></td></tr>
+        <tr><td>Favorite Drink:</td><td><input type="text" name="favoritedrink" /></td></tr>
+        <tr><td><br /></td></tr>
+        <tr><td><br /></td></tr>
+        <tr><td>Choose a password:</td></tr>
+        <tr><td>Must have a minimum of 8 characters.</td></tr>
+        <tr><td>Must contain only letters and digits.</td></tr>
+        <tr><td></td></tr>
+        <tr><td><b>@ViewBag.PasswordStatusMessage</b></td></tr>
+        <tr><td>Password:</td><td><input type="password" pattern="[0-9a-zA-Z]{8,20}" title="Enter an ID consisting of 8-20 letters and digits" name="password" required /></td></tr>
+        <tr><td>Confirm Password:</td><td><input type="password" name="passwordconfirm" required /></td></tr>
+        <tr><td><br /></td></tr>
+    </table>
+    <!-- <label for="datemax">You must be at least 18 to register:</label>
+    <input type="date" id="datemin" name="datemin" min="1979-12-31"><br><br> -->
+    <input type="checkbox" name="Agree" required />Do you agree to give us your soul?<br /><br />
     <input type="submit" value="Submit">
 </form>
